@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GamePortal — Início</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/gameportal.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+<div class="toast" id="toast"></div>
+
+<div class="page">
+    <div class="home-wrap">
+        <!-- HEADER -->
+        <div class="home-header">
+            <span class="logo-text">GAMEPORTAL</span>
+            <span class="home-badge">⚡ BETA</span>
+        </div>
+
+        <!-- XP BAR -->
+        <div class="xp-bar-wrap">
+            <div class="xp-level-badge" id="home-lvl-badge">NÍV 1</div>
+            <div class="xp-info">
+                <div class="xp-label">Experiência acumulada</div>
+                <div class="xp-track"><div class="xp-fill" id="home-xp-fill" style="width:0%"></div></div>
+                <div class="xp-nums" id="home-xp-nums">0 / 100 XP</div>
+            </div>
+        </div>
+
+        <!-- HERO -->
+        <div class="hero-section">
+            <h1>Desenvolva<br>a sua Mente</h1>
+            <p>Quizzes, jogos e desafios para expandir o teu conhecimento</p>
+        </div>
+
+        <!-- CATEGORIAS -->
+        <div class="section-label">Categorias</div>
+        <div class="category-grid">
+            <a href="pages/quiz.html">
+                <div class="cat-card general">
+                    <div class="cat-icon">🧠</div>
+                    <div class="cat-name">Quiz Geral</div>
+                    <div class="cat-count">20 Níveis</div>
+                </div>
+            </a>
+
+            <a href="pages/mental-math.html">
+                <div class="cat-card math">
+                    <div class="cat-icon">🔢</div>
+                    <div class="cat-name">Cálculo Mental</div>
+                    <div class="cat-count">20 Níveis</div>
+                </div>
+            </a>
+
+            <a href="pages/word-search.html">
+                <div class="cat-card word">
+                    <div class="cat-icon">🔤</div>
+                    <div class="cat-name">Caça-Palavras</div>
+                    <div class="cat-count">20 Níveis</div>
+                </div>
+            </a>
+
+            <a href="pages/typing.html">
+                <div class="cat-card typing">
+                    <div class="cat-icon">⌨️</div>
+                    <div class="cat-name">Digitar</div>
+                    <div class="cat-count">20 Níveis</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="nav-spacer"></div>
+    </div>
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+    <a href="index.html" style="flex:1">
+        <button class="nav-btn ativo">
+            <span class="ico">🏠</span><span>Início</span>
+        </button>
+    </a>
+    <a href="pages/games.html" style="flex:1">
+        <button class="nav-btn">
+            <span class="ico">🎮</span><span>Jogos</span>
+        </button>
+    </a>
+    <a href="pages/info.html" style="flex:1">
+        <button class="nav-btn">
+            <span class="ico">📍</span><span>Info</span>
+        </button>
+    </a>
+</div>
+
+<script src="js/shared.js"></script>
+</body>
+</html>
