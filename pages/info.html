@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GamePortal — Informações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+<div class="toast" id="toast"></div>
+
+<div class="page">
+    <div class="info-wrap">
+        <div class="info-header">📍 INFORMAÇÕES</div>
+
+        <!-- STATS -->
+        <div class="info-stat-row">
+            <div class="info-stat">
+                <div class="num" id="stat-xp">0</div>
+                <div class="lbl">XP Total</div>
+            </div>
+            <div class="info-stat">
+                <div class="num" id="stat-level">1</div>
+                <div class="lbl">Nível</div>
+            </div>
+            <div class="info-stat">
+                <div class="num" id="stat-games">0</div>
+                <div class="lbl">Partidas</div>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h3>🎮 Sobre o GamePortal</h3>
+            <p>Uma plataforma de jogos educativos desenvolvida para treinar a mente e expandir o conhecimento. Disponível em modo offline com 80+ horas de conteúdo.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>📚 Jogos Disponíveis</h3>
+            <p>
+                <strong style="color:var(--gold)">Quiz de Conhecimento</strong> — 20 níveis de perguntas do fácil ao extremamente avançado.<br><br>
+                <strong style="color:var(--gold)">Cálculo Mental</strong> — 20 níveis de operações matemáticas com tempo limite.<br><br>
+                <strong style="color:var(--green)">Caça-Palavras</strong> — 20 níveis progressivos com grades de palavras.<br><br>
+                <strong style="color:var(--cyan)">Digitar Palavras</strong> — 20 níveis para treinar velocidade de digitação.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>🏆 Sistema de XP</h3>
+            <p>Ganha XP ao jogar e responder corretamente. Acumula pontos para subir de nível e desbloquear conquistas!</p>
+        </div>
+
+        <div class="info-card">
+            <h3>⚡ Recursos</h3>
+            <p>
+                ✓ 80 Níveis totais (20 por jogo)<br>
+                ✓ Sistema de som em tempo real<br>
+                ✓ Dificuldade progressiva<br>
+                ✓ Compatível com PC e Celular<br>
+                ✓ Funciona Offline<br>
+                ✓ Salva progresso automaticamente
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>🏫 Créditos</h3>
+            <p><strong>GamePortal Beta — Versão 2.0</strong></p>
+            <p style="margin-top: 10px; font-size: 0.85rem;">Desenvolvido por:<br>Eduardo Paixão<br>Jeremias dos Santos<br>Leopoldino Luis<br>Nicolau Marcos José</p>
+            <p style="margin-top: 10px; font-size: 0.85rem;">Com a colaboração de:<br>Sofia Mancutima<br>Damião Lázaro</p>
+            <p style="margin-top: 15px; font-size: 0.75rem; color: var(--muted);">© GamePortal 2026 | Todos direitos reservados<br>CFTU · Uíge · Angola</p>
+        </div>
+
+        <div class="nav-spacer"></div>
+    </div>
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+    <a href="../index.html" style="flex:1">
+        <button class="nav-btn">
+            <span class="ico">🏠</span><span>Início</span>
+        </button>
+    </a>
+    <a href="games.html" style="flex:1">
+        <button class="nav-btn">
+            <span class="ico">🎮</span><span>Jogos</span>
+        </button>
+    </a>
+    <a href="info.html" style="flex:1">
+        <button class="nav-btn ativo">
+            <span class="ico">📍</span><span>Info</span>
+        </button>
+    </a>
+</div>
+
+<script src="../js/shared.js"></script>
+<script>
+// Render stats from localStorage
+(function() {
+  const st = getState();
+  document.getElementById('stat-xp').textContent = st.xp;
+  document.getElementById('stat-level').textContent = st.level;
+  document.getElementById('stat-games').textContent = st.games;
+})();
+</script>
+</body>
+</html>
